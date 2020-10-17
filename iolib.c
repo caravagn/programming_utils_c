@@ -52,3 +52,25 @@ int * read_integer_array(char * file, int * N)
   // Make pointer available
   return(int_x);
 }
+
+void print_int_vector(int * x, int n)
+{
+   // Visualisation
+  int i;
+
+  for (i = 0; i < n; i++)
+  {
+    printf("x[%d] =  %d\n", i, x[i]);
+  }
+}
+
+void print_double_vector(double * x, int n)
+{
+   // Visualisation
+  int i;
+
+  for (i = 0; i < n; i++)
+  {
+    printf("x[%d] =  %f\n", i, x[i]);
+  }
+}
