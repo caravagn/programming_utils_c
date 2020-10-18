@@ -13,18 +13,15 @@ int main(int argc, char *argv[])
   int * x = read_integer_array(argv[1], &N);
 
   // Visualisation
+  print_int_vector(x, N);
+
+  // Some simple modification of the data
   int i;
+  for(i = 0; i < N; i++) x[i] = i;
 
-  for (i = 0; i < N; i++)
-  {
-    // For a double x
-    // printf("x[%d] =  %f\n", i, x[i]);
-    // or the analogous for the integer version
-    printf("x[%d] =  %d\n", i, x[i]);
+  // Dump to file in output folder
+  dump_int_vector(argv[1], x, N);
 
-  }
-
-  
 
   return(0);
 }
