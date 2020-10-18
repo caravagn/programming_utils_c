@@ -117,8 +117,6 @@ void dump_int_vector(char * file, int * x, int n)
   FILE *myFile;    
   myFile = fopen(fullpath, "w");
 
-  //fwrite(x, sizeof(x), 1, myFile); /* Write to File */
-  //
   int i;
   for(i = 0; i < n; i++)
     fprintf(myFile, "%d\n", x[i]);  

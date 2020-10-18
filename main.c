@@ -1,4 +1,4 @@
-#include "iolib.c"
+#include "lib/iolib.c"
 
 
 int main(int argc, char *argv[])
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
   // Some simple modification of the data
   int i;
-  for(i = 0; i < N; i++) x[i] = i;
+  for(i = 0; i < N; i++) x[i] = 3;
 
   // Dump to file in output folder
   dump_int_vector(argv[1], x, N);
